@@ -59,7 +59,7 @@ function App() {
         <p>{models[currentIndex].delivery}</p>
         <p>{models[currentIndex].order}</p>
         <div style={{ display: "flex" }}>
-          <button onClick={handlePrev}>&lt; Prev</button>
+          <button onClick={handlePrev}>&lt; Prevous</button>
           <button onClick={handleNext}>Next &gt;</button>
         </div>
       </div>
