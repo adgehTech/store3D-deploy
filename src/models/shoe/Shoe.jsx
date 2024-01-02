@@ -7,14 +7,17 @@ export class Shoe extends Component {
   render() {
     return ( 
       <div className="canva">
-        <Canvas>
-          <Model />
-          <Environment preset="sunset" />
-          <OrbitControls />
-        </Canvas>
-      </div>   
+      <Canvas  camera={{ position: [2, 0, 15] }}>
+        <Model />
+        <Environment preset="sunset" />
+        <OrbitControls   
+          enableZoom={true}
+          zoomSpeed={0.5} 
+          />
+      </Canvas>
+    </div> 
     );
   }
 }
 
-export default Shoe;
+export default Shoe; 

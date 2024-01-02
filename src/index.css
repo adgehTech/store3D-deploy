@@ -2,19 +2,35 @@
   background-color: gainsboro;
   align-items: center;
   align-content: center;
+  padding: auto;
+  margin: 0;
 }
 
-.canva{
+.canva {
   width: 50vw;
-  height: 100vh; 
+  height: 100vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  transition: transform 0.5s ease;
 }
 
-.appCanva {
-  display: block;
-  margin-left: 30vh;
-  /* background-color: teal; */
+.app-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  transition: opacity 0.5s ease;
 }

@@ -7,14 +7,17 @@ export class Shorts extends Component {
   render() {
     return ( 
       <div className="canva">
-        <Canvas camera={{ position: [6, 0, 8] }}>
-          <Model />
-          <Environment preset="sunset" />
-          <OrbitControls />
-        </Canvas>
-      </div>   
+      <Canvas  camera={{ position: [2, 0, 15] }}>
+        <Model />
+        <Environment preset="sunset" />
+        <OrbitControls   
+          enableZoom={true}
+          zoomSpeed={0.5} 
+          />
+      </Canvas>
+    </div> 
     );
   }
 }
 
-export default Shorts;
+export default Shorts;  
