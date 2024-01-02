@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import ModelViewer from './slider'
+import Pants from './models/pants/Pant'
 // import ModelViewer from './try'
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <>
      <div>
       <h1>3Hello world</h1>
-      <ModelViewer />
+      <Pants />
     </div>
     </>
   )
 }
 
-export default App
+export default App;
