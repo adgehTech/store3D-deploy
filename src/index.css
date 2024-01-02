@@ -1,5 +1,20 @@
+*{
+  background-color: gainsboro;
+  align-items: center;
+  align-content: center;
+}
+
 .canva{
   width: 50vw;
-  height: 50vh; 
+  height: 100vh; 
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.appCanva {
+  display: block;
+  margin-left: 30vh;
+  /* background-color: teal; */
+
 }

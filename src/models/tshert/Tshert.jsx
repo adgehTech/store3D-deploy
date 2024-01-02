@@ -3,18 +3,21 @@ import React, { Component } from "react";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Model } from "./Model";
 
-export class Shorts extends Component {
+export class Tshert extends Component {
   render() {
     return ( 
       <div className="canva">
-        <Canvas camera={{ position: [6, 0, 8] }}>
+        <Canvas  camera={{ position: [2, 0, 40] }}>
           <Model />
           <Environment preset="sunset" />
-          <OrbitControls />
+          <OrbitControls   
+            enableZoom={true}
+            zoomSpeed={0.5} 
+            />
         </Canvas>
-      </div>   
+      </div>
     );
   }
 }
 
-export default Shorts;
+export default Tshert;
