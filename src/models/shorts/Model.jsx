@@ -14,7 +14,7 @@ export function Model(props) {
     model.scene.rotation.y = elapsedTime * rotationSpeed;
   });
 
-  return <mesh position={[1, -2, 9]}>
+  return <mesh position={[1, -2, 4]}>
               <primitive object={model.scene}/>
           </mesh>
 }

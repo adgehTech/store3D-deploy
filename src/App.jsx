@@ -15,21 +15,21 @@ const models = [
     order: 'ORDER =>' 
   },
   { 
-    component: Shoe, 
-    type: 'SPLY',
-    worth: 'BOX SHOE $91,25',
-    color: 'WHITE',
-    size: '1 2 3 SIZE GUIDE',
-    delivery: 'DELIVERY WITHIN 2 WEEKS',
-    order: 'ORDER =>' 
-  },
-  { 
     component: Shorts, 
     type: 'SPLY',
     worth: 'VULTURES SHORTS $92,95',
     color: 'BLACK',
     size: '1 2 3 SIZE GUIDE',
     delivery: 'DELIVERY WITHIN 1 WEEKS',
+    order: 'ORDER =>' 
+  },
+  { 
+    component: Shoe, 
+    type: 'SPLY',
+    worth: 'BOX SHOE $91,25',
+    color: 'WHITE',
+    size: '1 2 3 SIZE GUIDE',
+    delivery: 'DELIVERY WITHIN 2 WEEKS',
     order: 'ORDER =>' 
   },
 ];
