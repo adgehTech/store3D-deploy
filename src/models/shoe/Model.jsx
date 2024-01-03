@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function Model(props) {
-  const model = useGLTF("/assets/shoe/shoe.glb");
+  const model = useGLTF("/assets/tshert/tshert.glb");
 
   // Use useFrame to perform updates on each frame
   useFrame(({ clock }) => {
@@ -14,7 +14,7 @@ export function Model(props) {
     model.scene.rotation.y = elapsedTime * rotationSpeed;
   });
 
-  return <mesh position={[1.5, -1, 12]}>
+  return <mesh position={[1, -15, 4]}>
               <primitive object={model.scene}/>
           </mesh>
 }

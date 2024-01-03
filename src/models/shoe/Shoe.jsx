@@ -7,7 +7,7 @@ export class Shoe extends Component {
   render() {
     return ( 
       <div className="canva">
-      <Canvas  camera={{ position: [2, 0, 15] }}>
+      <Canvas  camera={{ position: [2, 0, 30] }}>
         <Model />
         <Environment preset="sunset" />
         <OrbitControls   
