@@ -1,14 +1,16 @@
 import React from "react";
-import PantIndex from "./PantIndex";
-import ShoeIndex from "./ShoeIndex";
-import ShortsIndex from "./ShortsIndex";
+// import FullIndex from "./full/FullIndex";
+import PantIndex from "./pants/PantIndex";
+import ShoeIndex from "./shoe/ShoeIndex";
+import ShortsIndex from "./shorts/ShortsIndex";
 
 export default function Models() {
   return (
     <>
-      <PantIndex />
       <ShoeIndex />
+      <PantIndex />
       <ShortsIndex />
+      {/* <FullIndex /> */}
     </>
   );
 }
