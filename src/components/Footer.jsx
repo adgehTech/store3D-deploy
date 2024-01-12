@@ -2,14 +2,19 @@ import {
   ColorLensTwoTone,
   FacebookTwoTone,
   GiteTwoTone,
-  SendTwoTone,
 } from "@mui/icons-material";
-import { Box, Card, Divider, IconButton, Input } from "@mui/material";
+import { Box, Divider, IconButton } from "@mui/material";
 import React from "react";
 
 export default function Footer() {
   return (
-    <Box sx={{bgcolor: 'ButtonShadow', borderTopRightRadius: 20, borderTopLeftRadius: 20}}>
+    <Box
+      sx={{
+        bgcolor: "ButtonShadow",
+        borderTopRightRadius: 20,
+        borderTopLeftRadius: 20,
+      }}
+    >
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, p: 5, pb: 0 }}>
         <IconButton
           variant="soft"
@@ -43,7 +48,7 @@ export default function Footer() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          pb: 5
+          pb: 5,
         }}
       >
         &copy; All Right Received.

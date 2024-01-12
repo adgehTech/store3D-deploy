@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-export function Model(props) {
+export function Model() {
   const model = useGLTF("/assets/tshert/tshert.glb");
 
   // Use useFrame to perform updates on each frame
