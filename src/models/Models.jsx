@@ -1,19 +1,15 @@
-import React from "react";
-import Pants from "./pants/Pant";
 import { Box } from "@mui/material";
-import ModelFoot from "../components/ModelFoot";
+import React from "react";
+import PantIndex from "./PantIndex";
+import ShoeIndex from "./ShoeIndex";
+import ShortsIndex from "./ShortsIndex";
 
-export default function Model() {
+export default function Models() {
   return (
-    <>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box
-          sx={{ backgroundColor: "gainsboro", height: "73vh", width: "50%" }}
-        >
-          <Pants />
-        </Box>
-      </Box>
-      <ModelFoot sx={{height: '20vh'}}/>
-    </>
+    <Box>
+      <PantIndex />
+      <ShoeIndex />
+      <ShortsIndex />
+    </Box>
   );
 }

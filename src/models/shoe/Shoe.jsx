@@ -1,23 +1,28 @@
 import { Canvas } from "@react-three/fiber";
-import React, { Component } from "react"; 
+import React, { Component } from "react";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Model } from "./Model";
+import { Box } from "@mui/material";
 
 export class Shoe extends Component {
   render() {
-    return ( 
-      <div className="canva">
-      <Canvas  camera={{ position: [2, 0, 30] }}>
-        <Model />
-        <Environment preset="sunset" />
-        <OrbitControls   
-          enableZoom={true}
-          zoomSpeed={0.5} 
-          />
-      </Canvas>
-    </div> 
+    return (
+      <Box
+        sx={{
+          height: "70vh",
+          overflow: "hidden",
+          margin: 0,
+          padding: 0,
+        }}
+      >
+        <Canvas camera={{ position: [2, 0, 30] }}>
+          <Model />
+          <Environment preset="sunset" />
+          <OrbitControls enableZoom={true} zoomSpeed={0.5} />
+        </Canvas>
+      </Box>
     );
   }
 }
 
-export default Shoe; 
+export default Shoe;

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ModelFoot() {
   return (
-    <Box sx={{ ml: { sm: 5 } }}>
+    <Box sx={{ ml: { sm: 5 }, mb: 5 }}>
       <Box
         sx={{ display: "flex", justifyContent: { xs: "center", sm: "left" } }}
       >
